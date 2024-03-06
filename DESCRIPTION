@@ -1,0 +1,36 @@
+Package: rusdm
+Type: Package
+Title: Access Data from the US Drought Monitor API
+Version: 0.0.1
+Authors@R: c(
+  person('Nicholas', 'Potter', email='econpotter@gmail.com', role = c('aut', 'cre'))
+  ) 
+Maintainer: Nicholas Potter <econpotter@gmail.com>
+Description: Interface to access data via the United States Drought Monitor's 
+  web API <https://droughtmonitor.unl.edu/DmData/DataDownload/WebServiceInfo.aspx>. 
+  Convenience functions facilitate building queries based on available 
+  parameters and valid parameter values. This product uses the NASS API but is 
+  not endorsed or certified by the US Drought Monitor.
+URL: https://docs.ropensci.org/rnassqs/ (website)
+     https://github.com/potterzot/rusdm/
+BugReports: https://github.com/potterzot/usdm/issues
+License: MIT + file LICENSE
+Language: en-US
+Imports: 
+  httr,
+  jsonlite
+Suggests: 
+    httptest,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Collate: 
+  'helpers.R'
+  'usdm-package.R'
+  'request.R'
+  'wrappers.R'
+Config/testthat/edition: 3
